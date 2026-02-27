@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — TripCache</title>
+    <link rel="icon" type="image/png" href="TripCache@2x.png">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --border: #334155;
+            --shadow: rgba(0, 0, 0, 0.04);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 24px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(229, 229, 229, 0.5);
+            animation: slideDown 0.6s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .logo {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.5px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-cta {
+            background: var(--text-primary);
+            color: var(--bg-primary);
+            padding: 12px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 2px solid var(--text-primary);
+        }
+
+        .nav-cta:hover {
+            background: transparent;
+            color: var(--text-primary);
+            transform: translateY(-2px);
+        }
+
+        /* Content */
+        .content {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 140px 40px 80px;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .page-title {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 700;
+            letter-spacing: -2px;
+            margin-bottom: 48px;
+        }
+
+        .policy-section {
+            margin-bottom: 40px;
+        }
+
+        .policy-section h2 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        .policy-section p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        .policy-section a {
+            color: var(--text-primary);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .policy-section a:hover {
+            color: var(--text-secondary);
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 40px 40px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+
+        .footer-link:hover {
+            color: var(--text-primary);
+        }
+
+        .footer-copyright {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                padding: 20px 24px;
+            }
+
+            .content {
+                padding: 120px 24px 60px;
+            }
+
+            .policy-section {
+                padding: 28px 24px;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        ::selection {
+            background: #0066ff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="TripCache@2x.png" alt="TripCache Icon" width="44" height="44">
+            TripCache
+        </a>
+        <a href="index.html#testflight" class="nav-cta">Join Beta</a>
+    </nav>
+
+    <!-- Content -->
+    <main class="content">
+        <h1 class="page-title">Privacy Policy</h1>
+
+        <div class="policy-section">
+            <p>We value your privacy. TripCache does not collect, transmit or distribute your data.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>Data Storage</h2>
+            <p>Your data is stored locally on your device and in your iCloud account (if enabled). We do not store any information from users — no names, no email addresses, no location data.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>Analytics</h2>
+            <p>Beyond the optional anonymous debugging information provided by Apple, TripCache does not use any analytics tools or tracking technologies.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or concerns, you can contact us at: <a href="mailto:support@tripcache.app">support@tripcache.app</a></p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-copyright">
+                © 2026 TripCache. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
